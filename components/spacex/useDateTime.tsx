@@ -1,14 +1,12 @@
 import React,{useState} from "react";
 
-interface State{
-    time:number | string
-}
+
 
 const useDateTime=()=>{
 
     let showdate=new Date();
     let time = showdate.toLocaleTimeString();
-    const [CurrentTime,setCurrentTime]=useState<State['time']>(time)
+    const [CurrentTime,setCurrentTime]=useState<string | number>(time)
     const displaytodayasdate=showdate.getDate()+'/'+(showdate.getMonth()+1)+'/'+showdate.getFullYear();
 
     const UpdateTime=()=>{
