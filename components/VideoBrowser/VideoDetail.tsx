@@ -1,4 +1,5 @@
 import React from 'react';
+import {Ui_embed,Iframe,Ui_segment,Header} from './Style.video'
 
 
 const VideoDetail = (props) =>{
@@ -9,15 +10,15 @@ const VideoDetail = (props) =>{
 
     const videosrc=`https://www.youtube.com/embed/${props.video.id.videoId}`;
     return (
-    <div>
-        <div className="ui embed">
-            <iframe title = 'video player' src = {videosrc} />
+    <Ui_embed>
+        <div >
+            <Iframe title = 'video player' src = {videosrc} />
         </div>
-        <div className="ui segment">
-            <h4 className="ui header">{props.video.snippet.title}</h4>
+        <Ui_segment>
+            <Header className="ui header">{props.video.snippet.title}</Header>
             <p>{props.video.snippet.description}</p>
-        </div>
-    </div>
+        </Ui_segment>
+    </Ui_embed>
         );
 }
 export default VideoDetail;

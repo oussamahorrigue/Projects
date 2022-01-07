@@ -1,26 +1,42 @@
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-
-export const Item = Styled.div`
-        
+export const Input = styled.input`
+    width:1500px;
+    height:30px;
+    border-radius: 8px;
 `
-export const Header = Styled.div`
-    font-size:20px;
-    color:#A9A9A9;
+export const Container = styled.div`
+    margin:0px;
+    position:absolute;
+    left:7px;
 `
-export const Button = Styled.a`
+export const RenderedList = styled.div`
     display:flex;
-    background-color:#DCDCDC;
-    width:40px;
-    height:25px;
-    color:#808080;
-    font-size:20px;
+    position:relative;
+    align-items:center;
+    margin:10px;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    a{
+        font-weight:100;
+        font-size:20px;
+        position:absolute;
+        right:5px;
+        text-decoration:none;
+        background-color:#DCDCDC;
+        color:#808080;
+        height:20px;
+        top:10px;
+        border-radius: 30px;
+    }
 `
-export const Input = Styled.input`
-    width: 99%;
-    padding: 8px 9px;
-    margin: 10px 0;
-    box-sizing: border-box
+export const Title = styled.div`
+    font-size:17px;
+    font-weight:600;
+    color:#463C54;
+    
 `
-
-
+export const Label = styled.label`
+    font-size:15px;
+    font-weight:600;
+`

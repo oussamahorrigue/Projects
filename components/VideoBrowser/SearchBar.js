@@ -1,5 +1,5 @@
 import React from "react";
-import {Input} from './Style.video'
+import {Input,Field,Search_Bar} from './Style.video'
 
 class SearchBar extends React.Component{
 
@@ -16,15 +16,15 @@ class SearchBar extends React.Component{
 
     render(){
         return (
-        <div className= "search-bar ui segment">
+        <Search_Bar >
             <form className="ui form" onSubmit={this.onFormSubmit}>
-                <div className="field">
+                <Field>
                     <label>Video Search</label>
                     <Input type = 'text' onChange={this.onInputChange}/>
-                </div>
+                </Field>
             </form>
 
-        </div>
+        </Search_Bar>
         );
     }
 }
