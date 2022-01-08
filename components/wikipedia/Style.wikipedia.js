@@ -4,6 +4,8 @@ export const Container = styled.div`
     flex-wrap:wrap;
     margin-left:0px;
     height:100px;
+    margin-left:50px;
+    width:1400px;
 `
 export const SearchBar = styled.div`
     display:flex;
@@ -17,6 +19,7 @@ export const SearchBar = styled.div`
         width:100%;
         height:35px;
         border-radius: 5px;
+        box-shadow:0 5px 25px rgba(0,0,0,.1);
     }
     label{
         color:#45514F;
