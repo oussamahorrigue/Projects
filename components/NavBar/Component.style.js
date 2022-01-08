@@ -1,5 +1,5 @@
 import Styled from 'styled-components';
-
+import Link from "next/link";
 
 export const Body = Styled.body`
 display:flex;
@@ -7,6 +7,7 @@ justify-content:center;
 align-items:center;
 min-height:20vh;
 background:#f6f6f6;
+flex-wrap:wrap;
 `
 
 export const Box = Styled.div`
@@ -69,6 +70,9 @@ export const Span = Styled.span`
     margin-right:10px;
     font-size:12px;
     font-weight:600;
+`
+export const LINK = Styled(Link)`
+    text-decoration:none;
 `
 
 

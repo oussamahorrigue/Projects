@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/VideoBrowser/App.js", "components/VideoBrowser/SearchBar.js", "components/NavBar/Component.style.js", "components/NavBar/Layout.js"  ],
+, "components/VideoBrowser/App.js", "components/VideoBrowser/SearchBar.js", "components/NavBar/Component.style.js", "components/NavBar/Layout.js", "components/wikipedia/Styles.wikipedia.tsx", "components/VideoBrowser/VideoItems.js"  ],
   "exclude": [
     "node_modules"
   ]

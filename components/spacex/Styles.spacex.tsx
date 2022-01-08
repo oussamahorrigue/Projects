@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     padding: 0 2rem;
     text-align: center;
+    flex-wrap:wrap;
 `
 
 export const Main = styled.main`

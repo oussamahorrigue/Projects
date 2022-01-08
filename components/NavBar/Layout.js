@@ -1,22 +1,21 @@
 import React from "react";
 import Link from "next/link";
-import {Body,Box,H2,Ul,Li,Span} from './Component.style'
-
-
+import {Container,Body,Title} from './Style.navbar'
 
 const Layout = () =>{
 
     return(
         <Body>
-            <Box>
-                <H2>My Projects</H2>
-                <Ul>
-                    <Li><Span>1</Span><Link href='/'>SpaceX</Link></Li>
-                    <Li><Span>2</Span><Link href='/wikipedia'>Wikipedia</Link></Li>
-                    <Li><Span>3</Span><Link href='/videoBrowser'>Video Browser</Link></Li>         
-                </Ul>
-            </Box>
-        </Body>
+            <Container>
+                <Title><h2>My Projects</h2></Title>
+                <nav>
+                    <li><span>1</span><Link href='/'><a>SpaceX</a></Link></li>
+                    <li><span>2</span><Link href='/wikipedia'><a>Wikipedia</a></Link></li>
+                    <li><span>3</span><Link href='/videoBrowser'><a>Video Browser</a></Link></li>         
+                </nav>
+            </Container>
+            </Body>
+        
     );
 }
 export default Layout;

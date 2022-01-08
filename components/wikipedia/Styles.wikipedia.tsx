@@ -4,11 +4,17 @@ export const Input = styled.input`
     width:1500px;
     height:30px;
     border-radius: 8px;
+    opacity:20%;
 `
 export const Container = styled.div`
     margin:0px;
     position:absolute;
     left:7px;
+    max-width:1500px;
+    flex-wrap:wrap;
+    height:100px;
+    justify-content:center;
+    
 `
 export const RenderedList = styled.div`
     display:flex;
