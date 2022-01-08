@@ -2,10 +2,9 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     flex-wrap:wrap;
-    margin-left:0px;
-    height:600px;
-    margin-left:50px;
-    width:1400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 `
 export const SearchBar = styled.div`
     display:flex;

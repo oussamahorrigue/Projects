@@ -7,13 +7,9 @@ export const Input = styled.input`
     opacity:20%;
 `
 export const Container = styled.div`
-    margin:0px;
-    position:absolute;
-    left:7px;
-    max-width:1500px;
+    
     flex-wrap:wrap;
-    height:100px;
-    justify-content:center;
+    
     
 `
 export const RenderedList = styled.div`

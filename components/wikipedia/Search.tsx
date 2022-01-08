@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import {SearchBar,Items,AncorContainor,Title} from './Style.wikipedia';
+import {Container} from './Styles.wikipedia';
 const Search =()=>{
 
     const [term , setTerm] = useState('program')
@@ -56,13 +57,13 @@ const Search =()=>{
         );
     })
     return (
-    <div >
+    <Container >
         <SearchBar>
             <label>Enter Search Term</label>
             <input placeholder='Search Wikipedia' onChange = {e=>setTerm(e.target.value)}/>
         </SearchBar>
         <div>{renderedItems}</div>
-    </div>
+    </Container>
     );
 }
 

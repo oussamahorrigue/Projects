@@ -6,8 +6,8 @@ import {Container,Main,Title,Footer} from '../components/spacex/Styles.spacex';
 export default function Home({launches}) {
   const {displaytodayasdate,CurrentTime}=useDateTime()
   return (
-    <div>
-      <Container>
+    <Container>
+      <div>
       <Main >
         <section >
           <Title>
@@ -37,8 +37,8 @@ export default function Home({launches}) {
             &copy; Oussama Horrigue  {displaytodayasdate} - {CurrentTime} 
           
         </Footer>
-      </Container>
-    </div>
+      </div>
+    </Container>
   )
 }
 export async function getStaticProps(){

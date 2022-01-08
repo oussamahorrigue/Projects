@@ -46,6 +46,7 @@ export const Body = styled.body`
     }
     }
     
+    
 `
 export const Title = styled.div`
     background:#376963;
@@ -63,4 +64,8 @@ export const Title = styled.div`
         margin-top:15px;
         margin-left:65px;
     }
+`
+export const Container = styled.div`
+    flex-wrap:wrap;
+    background-size:cover;
 `

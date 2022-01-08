@@ -3,6 +3,7 @@ import SearchBar from '../components/VideoBrowser/SearchBar';
 import axios from 'axios';
 import VideoList from '../components/VideoBrowser/VideoList';
 import VideoDetail from '../components/VideoBrowser/VideoDetail';
+import {Container} from '../components/VideoBrowser/Style_video';
 
 const KEY = 'AIzaSyBoT5UW-5-7EBwi0EyyFYS6EL5eMOfn6WM';
 
@@ -33,7 +34,7 @@ class App extends React.Component{
 
 
         return (
-        <div className='ui container'>
+        <Container>
             <SearchBar TryApi={this.onTermSubmit}/>  
             <div className = "ui grid">
                 <div className="ui row">
@@ -42,10 +43,10 @@ class App extends React.Component{
                     </div>
                     <div className='five wide column'>
                         <VideoList onVideoSelect={this.onVideoSelect} videos = {this.state.videos}/>
-        </div>
-        </div>
-        </div>
-        </div>
+                    </div>
+                </div>
+            </div>
+        </Container>
         );
     }
 }

@@ -9,6 +9,9 @@ export const Ui_image = styled.img`
 `
 export const Container = styled.div`
     flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 `
 export const Field = styled.div`
     display:flex;
