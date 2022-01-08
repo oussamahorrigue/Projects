@@ -50,7 +50,7 @@ export const Segment = styled.div`
     border-right:0.1px solid #C3C4C4;
     box-shadow:0 5px 25px rgba(0,0,0,.1);
     width:766px;
-    height:100px;
+    height:120px;
 `
 export const Embed = styled.div`
     display:flex;
@@ -67,6 +67,7 @@ export const ImageItems = styled.div`
     p{
         font-size:15px;
         font-weight:550;
+        margin-left:10px;
     }
 `
 export const Content = styled.div`

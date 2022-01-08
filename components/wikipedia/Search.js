@@ -20,7 +20,6 @@ const Search =()=>{
             }
             )
             setresult(donnees.data.query.search)
-            console.log(results)
         }
 
     if ((term) && !(results.length)){
@@ -39,7 +38,7 @@ const Search =()=>{
         }
 
     }  
-    },[term])
+    },[term,results.length])
     const renderedItems= results.map((result)=>{
         return (
             <Items key={result.pageid} >
