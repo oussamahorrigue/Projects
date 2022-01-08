@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 export const Container = styled.div`
     width:300px;
+    background-size:cover;
+    flex-wrap:wrap;
 ` 
 export const Body = styled.body`
     display:flex;
