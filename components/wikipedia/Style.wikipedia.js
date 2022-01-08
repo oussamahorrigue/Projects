@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
     flex-wrap:wrap;
     margin-left:0px;
-    height:100px;
+    height:600px;
     margin-left:50px;
     width:1400px;
 `
@@ -32,7 +32,7 @@ export const Items = styled.div`
     position:relative;
     border-top:0.1px solid #AFBDBB;
     margin-top:15px;
-    height:30px;
+    height:35px;
     
     a{
         text-decoration:none;
