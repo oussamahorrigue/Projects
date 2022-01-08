@@ -1,1 +1,1 @@
-Link: https://projects-fawn.vercel.app/wikipedia
+Link: https://projects-fawn.vercel.app/
