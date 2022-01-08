@@ -1,1 +1,1 @@
-Link: https://silly-noether-129797.netlify.app/
+Link: https://silly-noether-129797.netlify.app/videoBrowser
