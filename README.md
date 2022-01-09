@@ -1,1 +1,1 @@
-Link: https://silly-noether-129797.netlify.app/wikipedia
+Link: https://silly-noether-129797.netlify.app/
