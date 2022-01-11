@@ -15,9 +15,9 @@ export const Main = styled.main`
     align-items: center;
     
 `
-export const Title = styled.h1`
-    color:#20B2AA;
-    font-size:40px;
+export const Title = styled.p`
+    color:#4456668;
+    font-size:20px;
 `
 export const Footer = styled.footer`
     display: flex;

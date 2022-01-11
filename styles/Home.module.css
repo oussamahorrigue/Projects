@@ -42,7 +42,8 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
+  color: #32639b
 }
 
 .title,
@@ -74,23 +75,25 @@
 }
 
 .card {
-  background: #946565;
+  background: #4f7e7e;
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
-  color: #fff;
+  color: #F1F2F6;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  box-shadow: 0 5px 25px rgba(0,0,0,.2);
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #DADBDD;
+  background: #5a0f5a;
+  border-color: #ffffff;
 }
 
 .card h2 {

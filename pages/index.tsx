@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
 import {ApolloClient,InMemoryCache,gql} from '@apollo/client';
 import useDateTime from "../components/spacex/useDateTime"
-import {Container,Main,Title,Footer} from '../styles/style-spacex-page';
+import {Title} from '../styles/style-spacex-page';
 import { Key, ReactChild, ReactFragment, ReactPortal } from 'react';
 
 export default function Home({launches}) {
@@ -14,9 +14,9 @@ export default function Home({launches}) {
             SpaceX Launches
           </h1>
 
-          <p>
+          <Title>
             Latest launches from SpaceX
-          </p>
+          </Title>
           </section>
           <div className={styles.grid}>
             {launches.map((launch: { id: Key; links: { video_link: string; }; mission_name: boolean | ReactChild | ReactFragment | ReactPortal; launch_date_local: string | number | Date; }) =>{
