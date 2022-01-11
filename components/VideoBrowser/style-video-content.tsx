@@ -78,3 +78,15 @@ export const SerachImage = styled.div`
         border-right:0.1px solid #D7D9D9;
     }
 ` 
+export const Image = styled.img`
+    cursor: pointer;
+`
+export const Items = styled.div`
+    display:flex;
+    margin:15px;
+`
+export const Content = styled.div`
+    display:flex;
+    align-items:center;
+    margin-left:15px;
+`
