@@ -7,13 +7,12 @@ import { Key, ReactChild, ReactFragment, ReactPortal } from 'react';
 export default function Home({launches}) {
   const {displaytodayasdate,CurrentTime}=useDateTime()
   return (
-    <div>
-      <Container>
-      <Main >
+    <div className={styles.container}>
+      <main className={styles.main} >
         <section >
-          <Title>
+          <h1 className={styles.title}>
             SpaceX Launches
-          </Title>
+          </h1>
 
           <p>
             Latest launches from SpaceX
@@ -31,14 +30,14 @@ export default function Home({launches}) {
             })}
 
           </div>
-        </Main>
+        </main>
 
-        <Footer>
+        <footer className={styles.footer}>
           
             &copy; Oussama Horrigue  {displaytodayasdate} - {CurrentTime} 
           
-        </Footer>
-      </Container>
+        </footer>
+      
     </div>
   )
 }
