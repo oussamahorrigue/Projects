@@ -1,5 +1,5 @@
 import Layout from "../components/NavBar/Layout";
-import {Container} from '../components/NavBar/Style-navbar'
+import {Container} from '../styles/style-__app';
 
 function MyApp({ Component, pageProps }) {
   return (

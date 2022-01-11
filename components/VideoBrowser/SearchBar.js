@@ -1,5 +1,6 @@
 import React from "react";
-import {Field,Content,Icon} from './Style_video'
+import {Search,Inputstyle,SerachImage} from './style-video-content';
+
 
 class SearchBar extends React.Component{
 
@@ -16,14 +17,14 @@ class SearchBar extends React.Component{
 
     render(){
         return (
-        <div>
+        <Search>
             <form className="ui form" onSubmit={this.onFormSubmit}>
-                <Field>
+                <Inputstyle>
                     <label>Video Search</label>
-                    <Content><input type = 'text' placeholder="Search" onChange={this.onInputChange}/><Icon src="/search-icon.png" alt="Icon"/></Content>
-                </Field>
+                    <SerachImage><input type = 'text' placeholder="Search" onChange={this.onInputChange}/><img src="/search-icon.png" alt="Icon"/></SerachImage>
+                </Inputstyle>
             </form>
-        </div>
+        </Search>
         );
     }
 }

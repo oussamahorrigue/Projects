@@ -1,13 +1,14 @@
 import styles from '../styles/Home.module.css'
 import {ApolloClient,InMemoryCache,gql} from '@apollo/client';
 import useDateTime from "../components/spacex/useDateTime"
-import {Container,Main,Title,Footer} from '../components/spacex/Styles.spacex';
+import {Container,Main,Title,Footer} from '../styles/style-spacex-page';
+import { Key, ReactChild, ReactFragment, ReactPortal } from 'react';
 
 export default function Home({launches}) {
   const {displaytodayasdate,CurrentTime}=useDateTime()
   return (
-    <Container>
-      <div>
+    <div>
+      <Container>
       <Main >
         <section >
           <Title>
@@ -19,7 +20,7 @@ export default function Home({launches}) {
           </p>
           </section>
           <div className={styles.grid}>
-            {launches.map((launch) =>{
+            {launches.map((launch: { id: Key; links: { video_link: string; }; mission_name: boolean | ReactChild | ReactFragment | ReactPortal; launch_date_local: string | number | Date; }) =>{
               return(
                 <a key={launch.id} href={launch.links.video_link} className={styles.card} target='_blank' rel="noreferrer">
                   <h3>{launch.mission_name}</h3>
@@ -37,8 +38,8 @@ export default function Home({launches}) {
             &copy; Oussama Horrigue  {displaytodayasdate} - {CurrentTime} 
           
         </Footer>
-      </div>
-    </Container>
+      </Container>
+    </div>
   )
 }
 export async function getStaticProps(){

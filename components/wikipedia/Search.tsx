@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import {SearchBar,Items,AncorContainor,Title} from './Style.wikipedia';
-import {Container} from './Styles.wikipedia';
+import {Container,SearchBar,Rendered,Item,Go,Content} from './style-wikipedia-content'
+
+
 const Search =()=>{
 
     const [term , setTerm] = useState('program')
@@ -42,28 +43,30 @@ const Search =()=>{
     },[term,results.length])
     const renderedItems= results.map((result)=>{
         return (
-            <Items key={result.pageid} >
-                <AncorContainor >
+            <Item key={result.pageid} >
+                <Go >
                     <a href={`https://en.wikipedia.org?curid=${result.pageid}`} target='__blank'>Go</a>
-                </AncorContainor>
-                <div >
-                    <Title>
+                </Go>
+                <Content >
+                    <p>
                         {result.title}
-                    </Title>
+                    </p>
 
                     <span dangerouslySetInnerHTML= {{__html:result.snippet}}></span>
-                </div>
-            </Items>
+                </Content>
+            </Item>
         );
     })
     return (
-    <Container >
+    <div >
+        <Container>
         <SearchBar>
             <label>Enter Search Term</label>
             <input placeholder='Search Wikipedia' onChange = {e=>setTerm(e.target.value)}/>
         </SearchBar>
-        <div>{renderedItems}</div>
-    </Container>
+        <Rendered>{renderedItems}</Rendered>
+        </Container>
+    </div>
     );
 }
 
