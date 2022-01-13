@@ -3,10 +3,13 @@ import {ApolloClient,InMemoryCache,gql} from '@apollo/client';
 import useDateTime from "../components/spacex/useDateTime"
 import {Title} from '../styles/style-spacex-page';
 import { Key, ReactChild, ReactFragment, ReactPortal } from 'react';
+import Layout from '../components/NavBar/Layout';
 
 export default function Home({launches}) {
   const {displaytodayasdate,CurrentTime}=useDateTime()
   return (
+    <>
+    <Layout/>
     <div className={styles.container}>
       <main className={styles.main} >
         <section >
@@ -39,6 +42,7 @@ export default function Home({launches}) {
         </footer>
       
     </div>
+    </>
   )
 }
 export async function getStaticProps(){
