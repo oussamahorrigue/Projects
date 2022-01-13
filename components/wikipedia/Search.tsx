@@ -8,7 +8,7 @@ import {
   Go,
   Content,
 } from "./style-wikipedia-content";
-import Layout from "../NavBar/Layout";
+import Layout from "../NavBar/WikiLayout";
 
 const Search = () => {
   const [term, setTerm] = useState("program");
@@ -45,13 +45,6 @@ const Search = () => {
   return (
     <div>
       <Container>
-        <SearchBar>
-          <label>Enter Search Term</label>
-          <input
-            placeholder="Search Wikipedia"
-            onChange={(e) => setTerm(e.target.value)}
-          />
-        </SearchBar>
         <Layout setTerm={setTerm} />
         <Rendered>
           {results.map((result) => (

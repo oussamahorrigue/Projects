@@ -1,19 +1,16 @@
 import React from "react";
-import App from '../components/VideoBrowser/App';
-import {Container} from '../styles/style-video'
-import Layout from '../components/NavBar/Layout';
-const VideoBrowser=()=>{
+import App from "../components/VideoBrowser/App";
+import { Container } from "../styles/style-video";
+import Head from "next/head";
 
-    return(
-        <>
-        <Layout/>
-        <Container>
-            <App/>
-        </Container>
-        </>
-    )
-}
+const VideoBrowser = () => {
+  return (
+    <>
+      <Head>
+        <title>Video Browser</title>
+      </Head>
+      <App />
+    </>
+  );
+};
 export default VideoBrowser;
-
-
-

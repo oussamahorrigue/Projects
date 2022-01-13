@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -22,9 +18,18 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "components/VideoBrowser/App.js", "components/VideoBrowser/SearchBar.js", "components/NavBar/Component.style.js", "components/NavBar/Layout.js", "components/wikipedia/Styles.wikipedia.tsx", "components/VideoBrowser/VideoItems.js", "components/wikipedia/Search.tsx", "styles/style-wikipedia.js", "pages/index.tsx", "components/spacex/App.tsx"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "**/*.tsx",
+    "components/VideoBrowser/App.js",
+    "components/VideoBrowser/SearchBar.js",
+    "components/NavBar/Component.style.js",
+    "components/NavBar/WikiLayout.js",
+    "components/wikipedia/Styles.wikipedia.tsx",
+    "components/VideoBrowser/VideoItems.js",
+    "components/wikipedia/Search.tsx",
+    "styles/style-wikipedia.js",
+    "pages/index.tsx",
+    "components/spacex/App.tsx",
+    "components/NavBar/SpacexLayout.js"
+  ],
+  "exclude": ["node_modules"]
 }
