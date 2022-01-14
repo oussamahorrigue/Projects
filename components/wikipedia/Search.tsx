@@ -44,7 +44,7 @@ const Search = () => {
 
   return (
     <div>
-      <Container>
+      <div className="container-fluid">
         <Layout setTerm={setTerm} />
         <Rendered>
           {results.map((result) => (
@@ -67,7 +67,7 @@ const Search = () => {
             </Item>
           ))}
         </Rendered>
-      </Container>
+      </div>
     </div>
   );
 };

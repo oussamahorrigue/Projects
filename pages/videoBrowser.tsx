@@ -1,6 +1,5 @@
 import React from "react";
 import App from "../components/VideoBrowser/App";
-import { Container } from "../styles/style-video";
 import Head from "next/head";
 
 const VideoBrowser = () => {
