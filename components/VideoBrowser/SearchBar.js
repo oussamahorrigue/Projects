@@ -33,7 +33,7 @@ class SearchBar extends React.Component {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link href="/">
-                  <a className="nav-link " aria-current="page">
+                  <a className="nav-link active" aria-current="page">
                     SpaceX
                   </a>
                 </Link>
@@ -49,7 +49,7 @@ class SearchBar extends React.Component {
                 </Link>
               </li>
             </ul>
-            <form className="d-flex">
+            <form className="d-flex" onSubmit={this.onFormSubmit}>
               <input
                 className="form-control me-2"
                 type="search"
