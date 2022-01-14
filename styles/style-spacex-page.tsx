@@ -15,8 +15,9 @@ export const Main = styled.main`
   align-items: center;
 `;
 export const Title = styled.p`
-  color: #4456668;
-  font-size: 20px;
+  color: #529b91;
+  font-weight: 550;
+  font-size: 30px;
 `;
 export const Footer = styled.footer`
   display: flex;

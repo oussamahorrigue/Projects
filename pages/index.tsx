@@ -53,7 +53,16 @@ export default function Home({ launches }) {
                 launch_date_local: string | number | Date;
               }) => {
                 return (
-                  <a
+                  <motion.a
+                    whileHover={{
+                      position: "relative",
+                      zIndex: 1,
+                      background: "purple",
+                      scale: 1.2,
+                      transition: {
+                        duration: 0.2,
+                      },
+                    }}
                     key={launch.id}
                     href={launch.links.video_link}
                     className={styles.card}
@@ -67,7 +76,7 @@ export default function Home({ launches }) {
                         "en-US"
                       )}
                     </p>
-                  </a>
+                  </motion.a>
                 );
               }
             )}
