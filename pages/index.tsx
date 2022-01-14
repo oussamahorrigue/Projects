@@ -17,7 +17,7 @@ export default function Home({ launches }) {
       <Layout />
       <div className={styles.container}>
         <main className={styles.main}>
-          <Section>
+          <div style={{ margin: "70px" }}>
             <motion.div
               initial="hidden"
               animate="visible"
@@ -35,11 +35,16 @@ export default function Home({ launches }) {
                 },
               }}
             >
-              <Title>SpaceX Launches</Title>
+              <h2 style={{ color: "#2E5E57" }}>SpaceX Launches</h2>
 
-              <h5 className="card-text">Latest launches from SpaceX</h5>
+              <h3
+                className="card-text"
+                style={{ color: "#5A7CB6", marginTop: "20px" }}
+              >
+                Latest launches from SpaceX
+              </h3>
             </motion.div>
-          </Section>
+          </div>
           <div className={styles.grid}>
             {launches.map(
               (launch: {
@@ -57,7 +62,7 @@ export default function Home({ launches }) {
                     whileHover={{
                       position: "relative",
                       zIndex: 1,
-                      background: "purple",
+
                       scale: 1.2,
                       transition: {
                         duration: 0.2,
