@@ -1,15 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import {
-  Container,
-  SearchBar,
-  Rendered,
-  Item,
-  Go,
-  Content,
-} from "./style-wikipedia-content";
-import Layout from "../NavBar/WikiLayout";
 
+import Layout from "../NavBar/WikiLayout";
 const Search = () => {
   const [term, setTerm] = useState("program");
   const [results, setresult] = useState([]);
@@ -26,6 +18,7 @@ const Search = () => {
         },
       });
       setresult(donnees.data.query.search);
+      console.log(results);
     };
 
     if (term && !results.length) {
@@ -40,34 +33,34 @@ const Search = () => {
         clearTimeout(TimeroutId);
       };
     }
-  }, [term, results.length]);
+  }, [term]);
+  const renderedItems = results.map((result) => {
+    return (
+      <div key={result.pageid} className="item">
+        <div className="right floated content">
+          <a
+            target="__blank"
+            className="ui button"
+            href={`https://en.wikipedia.org?curid=${result.pageid}`}
+          >
+            Go
+          </a>
+        </div>
+        <div className="content">
+          <div className="header">{result.title}</div>
 
-  return (
-    <div>
-      <div className="container-fluid">
-        <Layout setTerm={setTerm} />
-        <Rendered>
-          {results.map((result) => (
-            <Item key={result.pageid}>
-              <Go>
-                <a
-                  href={`https://en.wikipedia.org?curid=${result.pageid}`}
-                  target="__blank"
-                >
-                  Go
-                </a>
-              </Go>
-              <Content>
-                <p>{result.title}</p>
-
-                <span
-                  dangerouslySetInnerHTML={{ __html: result.snippet }}
-                ></span>
-              </Content>
-            </Item>
-          ))}
-        </Rendered>
+          <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>
+        </div>
       </div>
+    );
+  });
+  return (
+    <div className="ui form">
+      <Layout setTerm={setTerm} />
+      <div className="field">
+        <label>Enter Search Term</label>
+      </div>
+      <div className="ui celled list">{renderedItems}</div>
     </div>
   );
 };

@@ -25,11 +25,14 @@
     "components/NavBar/WikiLayout.js",
     "components/wikipedia/Styles.wikipedia.tsx",
     "components/VideoBrowser/VideoItems.js",
-    "components/wikipedia/Search.tsx",
+    "components/wikipedia/Search.js",
     "styles/style-wikipedia.js",
     "pages/index.tsx",
     "components/spacex/App.tsx",
-    "components/NavBar/SpacexLayout.js"
+    "components/NavBar/SpacexLayout.js",
+    "components/Search-Images/ImageCard.js",
+    "components/Search-Images/SearchBar.js",
+    "components/Search-Images/ImageList.js"
   ],
   "exclude": ["node_modules"]
 }

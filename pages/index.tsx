@@ -13,6 +13,10 @@ export default function Home({ launches }) {
     <div className="container-fluid">
       <Head>
         <title>SpaceX</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+          rel="stylesheet"
+        />
       </Head>
       <Layout />
       <div className={styles.container}>

@@ -12,6 +12,7 @@ const VideoItems = (props) => {
     >
       <motion.img
         alt={props.video.snippet.title}
+        className="ui image"
         src={props.video.snippet.thumbnails.medium.url}
         style={{ cursor: "pointer" }}
         whileHover={{
@@ -24,9 +25,9 @@ const VideoItems = (props) => {
           },
         }}
       />
-      <Content className="content">
-        <p>{props.video.snippet.title}</p>
-      </Content>
+      <div className="content">
+        <div className="header">{props.video.snippet.title}</div>
+      </div>
     </Items>
   );
 };
