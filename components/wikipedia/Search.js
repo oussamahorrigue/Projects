@@ -57,9 +57,6 @@ const Search = () => {
   return (
     <div className="ui form">
       <Layout setTerm={setTerm} />
-      <div className="field">
-        <label>Enter Search Term</label>
-      </div>
       <div className="ui celled list">{renderedItems}</div>
     </div>
   );
