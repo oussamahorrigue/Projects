@@ -17,16 +17,14 @@ const Layout = ({ setTerm }) => {
         </Link>
         <div className="right menu">
           <div className="item">
-            <form>
-              <div className="ui transparent icon input">
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  onChange={(e) => setTerm(e.target.value)}
-                />
-                <i className="search link icon"></i>
-              </div>
-            </form>
+            <div className="ui transparent icon input">
+              <input
+                type="text"
+                placeholder="Search..."
+                onChange={(e) => setTerm(e.target.value)}
+              />
+              <i className="search link icon"></i>
+            </div>
           </div>
         </div>
       </div>
