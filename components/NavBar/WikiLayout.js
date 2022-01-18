@@ -7,7 +7,7 @@ const Layout = ({ setTerm }) => {
     <>
       <div className="ui pointing menu">
         <Link href="/">
-          <a className="active item">SpaceX</a>
+          <a className="item">SpaceX</a>
         </Link>
         <Link href="/videoBrowser">
           <a className="item">videoBrowser</a>
@@ -28,7 +28,6 @@ const Layout = ({ setTerm }) => {
           </div>
         </div>
       </div>
-      <div className="ui segment"></div>
     </>
   );
 };
