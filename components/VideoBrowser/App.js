@@ -38,7 +38,7 @@ class App extends React.Component {
     return (
       <>
         <SearchBar TryApi={this.onTermSubmit} />
-        <div className="ui container">
+        <div className="ui container" style={{ width: "1500px" }}>
           <div className="ui grid">
             <div className="ui row">
               <div className="eleven wide column">

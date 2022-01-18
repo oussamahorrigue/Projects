@@ -42,9 +42,6 @@ class SearchBar extends React.Component {
             </div>
           </div>
         </div>
-        <div className="ui segment">
-          <p></p>
-        </div>
       </>
     );
   }

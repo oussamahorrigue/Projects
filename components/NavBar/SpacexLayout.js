@@ -15,9 +15,6 @@ const Layout = () => {
           <a className="item">Wikipedia</a>
         </Link>
       </div>
-      <div className="ui segment">
-        <p></p>
-      </div>
     </>
   );
 };

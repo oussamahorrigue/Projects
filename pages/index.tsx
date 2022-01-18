@@ -21,7 +21,7 @@ export default function Home({ launches }) {
       <Layout />
       <div className={styles.container}>
         <main className={styles.main}>
-          <div style={{ margin: "70px" }}>
+          <div style={{ margin: "20px", padding: "5px" }}>
             <motion.div
               initial="hidden"
               animate="visible"
@@ -34,7 +34,7 @@ export default function Home({ launches }) {
                   scale: 1,
                   opacity: 1,
                   transition: {
-                    delay: 0.4,
+                    delay: 0.6,
                   },
                 },
               }}
