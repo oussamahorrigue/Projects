@@ -30,9 +30,7 @@ const Layout = ({ setTerm }) => {
           </div>
         </div>
       </div>
-      <div className="ui segment">
-        <p></p>
-      </div>
+      <div className="ui segment"></div>
     </>
   );
 };
