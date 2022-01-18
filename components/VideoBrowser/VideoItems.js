@@ -9,6 +9,7 @@ const VideoItems = (props) => {
         props.onVideoSelect(props.video);
       }}
       className="video-item item"
+      style={{ textAlign: "center" }}
     >
       <motion.img
         alt={props.video.snippet.title}
