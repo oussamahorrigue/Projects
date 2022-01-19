@@ -32,7 +32,9 @@
     "components/NavBar/SpacexLayout.js",
     "components/Search-Images/ImageCard.js",
     "components/Search-Images/SearchBar.js",
-    "components/Search-Images/ImageList.js"
+    "components/Search-Images/ImageList.js",
+    "components/pokemon/App.js",
+    "pages/pokemon.js"
   ],
   "exclude": ["node_modules"]
 }

@@ -27,6 +27,9 @@ class SearchBar extends React.Component {
           <Link href="wikipedia">
             <a className="item">Wikipedia</a>
           </Link>
+          <Link href="pokemon">
+            <a className="item">Pokemon</a>
+          </Link>
           <div className="right menu">
             <div className="item">
               <form onSubmit={this.onFormSubmit}>

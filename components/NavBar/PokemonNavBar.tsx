@@ -1,9 +1,15 @@
-import React from "react";
 import Link from "next/link";
-
-const Layout = () => {
+import Head from "next/head";
+const PokemonLayout = () => {
   return (
     <>
+      <Head>
+        <title>Pokemon</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+          rel="stylesheet"
+        />
+      </Head>
       <div className="ui pointing menu">
         <Link href="/">
           <a className="item">SpaceX</a>
@@ -21,4 +27,4 @@ const Layout = () => {
     </>
   );
 };
-export default Layout;
+export default PokemonLayout;
