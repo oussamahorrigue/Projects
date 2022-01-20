@@ -16,7 +16,7 @@ interface Pokemon {
 }
 export function Pokemons({ pokemon, types }) {
   return (
-    <Pokemon style={{ width: "14%", height: "18rem" }}>
+    <Pokemon style={{ width: "13%", height: "17rem" }}>
       <div>
         <BoxName>
           <PokemonName>{pokemon.name}</PokemonName>
