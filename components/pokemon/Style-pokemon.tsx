@@ -34,7 +34,7 @@ export const PokemonName = styled.p`
 `;
 export const BoxImage = styled.div`
   padding: 0px;
-  min-height: 300px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +54,7 @@ export const PokemonImage = styled.img`
 `;
 
 export const PokemonTypeSpan = styled.span`
-  width: 35%;
+  width: 45%;
   background-color: #f16820;
   border-radius: 3px;
   padding: 7px;
@@ -70,6 +70,7 @@ export const PokemonTypeSpan = styled.span`
 `;
 export const PokemonType = styled.div`
   display: flex;
+
   padding-left: 10px;
   padding-right: 10px;
   justify-content: space-around;

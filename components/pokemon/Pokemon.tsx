@@ -16,7 +16,7 @@ interface Pokemon {
 }
 export function Pokemons({ pokemon, types }) {
   return (
-    <Pokemon>
+    <Pokemon style={{ width: "12%", height: "17rem" }}>
       <div>
         <BoxName>
           <PokemonName>{pokemon.name}</PokemonName>
@@ -27,7 +27,11 @@ export function Pokemons({ pokemon, types }) {
           ))}
         </PokemonType>
         <BoxImage>
-          <img src={pokemon.image} alt={pokemon.name} />
+          <img
+            src={pokemon.image}
+            alt={pokemon.name}
+            style={{ width: "70%" }}
+          />
         </BoxImage>
       </div>
     </Pokemon>

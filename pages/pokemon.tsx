@@ -4,6 +4,7 @@ import { Chain } from "../zeus";
 import Link from "next/link";
 import Head from "next/head";
 import { Pokemons } from "../components/pokemon/Pokemon";
+import PokemonNavBar from "../components/NavBar/PokemonNavBar";
 
 const chain = Chain("https://graphql-pokemon2.vercel.app");
 
@@ -17,7 +18,6 @@ interface IState {
 const Pokemon: React.FC = () => {
   const [pokemons, setPokemons] = useState<IState[]>([]);
   const [PokemonSearched, setPokemonSearched] = useState<string>("");
-  const [DataByName, setDataByName] = useState<IState[]>([]);
 
   useEffect(() => {
     const getPokemons = async (howMany: number) => {
@@ -36,21 +36,6 @@ const Pokemon: React.FC = () => {
     getPokemons(200);
   }, []);
 
-  /*
-  const getPokemonByName = async (pokemonName: string) => {
-    const data = await chain("query")({
-      pokemon: [
-        { name: pokemonName },
-        { image: true, name: true, types: true, id: true },
-      ],
-    });
-    if (data) {
-      setDataByName(data.pokemon);
-      console.log(data);
-    }
-  };
-  */
-
   return (
     <>
       <Head>
@@ -60,33 +45,7 @@ const Pokemon: React.FC = () => {
           rel="stylesheet"
         />
       </Head>
-      <div className="ui pointing menu">
-        <Link href="/">
-          <a className="item">SpaceX</a>
-        </Link>
-        <Link href="/videoBrowser">
-          <a className="item">videoBrowser</a>
-        </Link>
-        <Link href="wikipedia">
-          <a className="item">Wikipedia</a>
-        </Link>
-        <Link href="pokemon">
-          <a className="item">Pokemon</a>
-        </Link>
-        <div className="ui action input">
-          <input
-            type="text"
-            placeholder="Search..."
-            onChange={(e) => setPokemonSearched(e.target.value)}
-          />
-          <button
-            className="ui button"
-            /*onClick={getPokemonByName(PokemonSearched)}*/
-          >
-            Search
-          </button>
-        </div>
-      </div>
+      <PokemonNavBar setPokemonSearched={setPokemonSearched} />
       <PokemonsContainer pokemons={pokemons} />
     </>
   );
