@@ -11,6 +11,7 @@ export const Pokemon = styled.div`
   border: 1px solid rgba(0, 0, 0, 0.125);
   overflow: hidden;
   margin-bottom: 20px;
+  border-radius: 15px;
 `;
 export const Container = styled.div`
   display: flex;
@@ -32,7 +33,7 @@ export const PokemonName = styled.p`
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
 `;
 export const BoxImage = styled.div`
-  padding: 20px;
+  padding: 0px;
   min-height: 300px;
   display: flex;
   align-items: center;

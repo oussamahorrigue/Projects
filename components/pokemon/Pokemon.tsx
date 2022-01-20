@@ -14,25 +14,18 @@ interface Pokemon {
   image?: string;
   id: string;
 }
-export function Pokemons({ pokemon }) {
+export function Pokemons({ pokemon, types }) {
   return (
     <Pokemon>
       <div>
         <BoxName>
           <PokemonName>{pokemon.name}</PokemonName>
         </BoxName>
-
-        {pokemon.types[1] ? (
-          <PokemonType>
-            <PokemonTypeSpan>{`${pokemon.types[0]} `}</PokemonTypeSpan>
-            <PokemonTypeSpan>{`${pokemon.types[1]} `}</PokemonTypeSpan>
-          </PokemonType>
-        ) : (
-          <PokemonType>
-            <PokemonTypeSpan>{`${pokemon.types[0]} `}</PokemonTypeSpan>
-          </PokemonType>
-        )}
-
+        <PokemonType>
+          {types.map((type: string[], index: number) => (
+            <PokemonTypeSpan key={index}>{type}</PokemonTypeSpan>
+          ))}
+        </PokemonType>
         <BoxImage>
           <img src={pokemon.image} alt={pokemon.name} />
         </BoxImage>
