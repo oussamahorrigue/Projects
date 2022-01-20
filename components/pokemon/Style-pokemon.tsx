@@ -59,7 +59,8 @@ export const Pokemon_types = styled.div`
   justify-content: space-between;
   margin: 15px;
   span {
-    width: 40%;
+    width: 100%;
+    margin: 2px;
     background-color: #f16820;
     border-radius: 3px;
     padding: 7px;
