@@ -1,10 +1,10 @@
 import React from "react";
 import { Pokemons } from "./Pokemon";
-import { Container, Pokemon } from "./Style-pokemon";
+import { Container } from "./Style-pokemon";
 
 const PokemonsContainer = ({ pokemons, PokemonSearched }) => {
   return (
-    <div className="ui container" style={{ width: "1500px" }}>
+    <div className="container-fluid">
       <Pokemons pokemons={pokemons} PokemonSearched={PokemonSearched} />
     </div>
   );

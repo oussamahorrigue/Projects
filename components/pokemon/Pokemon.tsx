@@ -1,12 +1,9 @@
 import React from "react";
 import {
   Pokemon,
-  PokemonName,
-  BoxImage,
-  Pokemon__meta,
-  BoxName,
-  PokemonTypeSpan,
-  PokemonType,
+  Pokemon__name,
+  Pokemon__image,
+  Pokemon_types,
 } from "./Style-pokemon";
 
 export function Pokemons({ pokemons, PokemonSearched }) {
@@ -17,18 +14,18 @@ export function Pokemons({ pokemons, PokemonSearched }) {
       );
     })
     .map((pokemo) => (
-      <Pokemon key={pokemo.id} style={{ width: "13%", height: "17rem" }}>
-        <BoxName>
-          <PokemonName>{pokemo.name}</PokemonName>
-        </BoxName>
-        <PokemonType>
+      <Pokemon key={pokemo.id}>
+        <Pokemon__name>
+          <p>{pokemo.name}</p>
+        </Pokemon__name>
+        <Pokemon_types>
           {pokemo.types.map((type: string[], index: number) => (
-            <PokemonTypeSpan key={index}>{type}</PokemonTypeSpan>
+            <span key={index}>{type}</span>
           ))}
-        </PokemonType>
-        <BoxImage>
-          <img src={pokemo.image} alt={pokemo.name} style={{ width: "40%" }} />
-        </BoxImage>
+        </Pokemon_types>
+        <Pokemon__image>
+          <img src={pokemo.image} alt={pokemo.name} />
+        </Pokemon__image>
       </Pokemon>
     ));
 
