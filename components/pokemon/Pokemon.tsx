@@ -1,9 +1,12 @@
 import React from "react";
 import {
   Pokemon,
-  Pokemon_Image,
-  Pokemon__meta,
   PokemonName,
+  BoxImage,
+  Pokemon__meta,
+  BoxName,
+  PokemonTypeSpan,
+  PokemonType,
 } from "./Style-pokemon";
 interface Pokemon {
   name?: string;
@@ -14,16 +17,26 @@ interface Pokemon {
 export function Pokemons({ pokemon }) {
   return (
     <Pokemon>
-      <div className="pokemon__name">
-        <PokemonName>{pokemon.name}</PokemonName>
+      <div>
+        <BoxName>
+          <PokemonName>{pokemon.name}</PokemonName>
+        </BoxName>
+
+        {pokemon.types[1] ? (
+          <PokemonType>
+            <PokemonTypeSpan>{`${pokemon.types[0]} `}</PokemonTypeSpan>
+            <PokemonTypeSpan>{`${pokemon.types[1]} `}</PokemonTypeSpan>
+          </PokemonType>
+        ) : (
+          <PokemonType>
+            <PokemonTypeSpan>{`${pokemon.types[0]} `}</PokemonTypeSpan>
+          </PokemonType>
+        )}
+
+        <BoxImage>
+          <img src={pokemon.image} alt={pokemon.name} />
+        </BoxImage>
       </div>
-      <Pokemon__meta>
-        <span>{pokemon.types}</span>
-      </Pokemon__meta>
-      <Pokemon_Image>
-        <img src={pokemon.image} alt={pokemon.name} />
-      </Pokemon_Image>
-      <div></div>
     </Pokemon>
   );
 }
