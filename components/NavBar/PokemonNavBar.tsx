@@ -16,13 +16,17 @@ const PokemonNavBar = ({ setPokemonSearched }) => {
       <Link href="pokemon">
         <a className="item">Pokemon</a>
       </Link>
-      <div className="ui action input">
-        <input
-          type="text"
-          placeholder="Search..."
-          onChange={(e) => setPokemonSearched(e.target.value)}
-        />
-        <button className="ui button">Search</button>
+      <div className="right menu">
+        <div className="item">
+          <div className="ui transparent icon input">
+            <input
+              type="text"
+              placeholder="Search..."
+              onChange={(e) => setPokemonSearched(e.target.value)}
+            />
+            <i className="search link icon"></i>
+          </div>
+        </div>
       </div>
     </div>
   );

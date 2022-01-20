@@ -46,7 +46,10 @@ const Pokemon: React.FC = () => {
         />
       </Head>
       <PokemonNavBar setPokemonSearched={setPokemonSearched} />
-      <PokemonsContainer pokemons={pokemons} />
+      <PokemonsContainer
+        pokemons={pokemons}
+        PokemonSearched={PokemonSearched}
+      />
     </>
   );
 };

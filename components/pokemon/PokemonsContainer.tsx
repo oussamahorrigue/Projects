@@ -2,13 +2,10 @@ import React from "react";
 import { Pokemons } from "./Pokemon";
 import { Container, Pokemon } from "./Style-pokemon";
 
-const PokemonsContainer = ({ pokemons }) => {
+const PokemonsContainer = ({ pokemons, PokemonSearched }) => {
   return (
     <div className="ui container" style={{ width: "1500px" }}>
-      {pokemons &&
-        pokemons.map((pokemon) => (
-          <Pokemons key={pokemon.id} pokemon={pokemon} types={pokemon.types} />
-        ))}
+      <Pokemons pokemons={pokemons} PokemonSearched={PokemonSearched} />
     </div>
   );
 };

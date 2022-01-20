@@ -8,32 +8,29 @@ import {
   PokemonTypeSpan,
   PokemonType,
 } from "./Style-pokemon";
-interface Pokemon {
-  name?: string;
-  types?: string[];
-  image?: string;
-  id: string;
-}
-export function Pokemons({ pokemon, types }) {
-  return (
-    <Pokemon style={{ width: "13%", height: "17rem" }}>
-      <div>
+
+export function Pokemons({ pokemons, PokemonSearched }) {
+  const PokeList = pokemons
+    .filter((pokemo) => {
+      return (
+        pokemo.name.toLowerCase().indexOf(PokemonSearched.toLowerCase()) >= 0
+      );
+    })
+    .map((pokemo) => (
+      <Pokemon key={pokemo.id} style={{ width: "13%", height: "17rem" }}>
         <BoxName>
-          <PokemonName>{pokemon.name}</PokemonName>
+          <PokemonName>{pokemo.name}</PokemonName>
         </BoxName>
         <PokemonType>
-          {types.map((type: string[], index: number) => (
+          {pokemo.types.map((type: string[], index: number) => (
             <PokemonTypeSpan key={index}>{type}</PokemonTypeSpan>
           ))}
         </PokemonType>
         <BoxImage>
-          <img
-            src={pokemon.image}
-            alt={pokemon.name}
-            style={{ width: "40%" }}
-          />
+          <img src={pokemo.image} alt={pokemo.name} style={{ width: "40%" }} />
         </BoxImage>
-      </div>
-    </Pokemon>
-  );
+      </Pokemon>
+    ));
+
+  return <div>{PokeList}</div>;
 }
