@@ -18,7 +18,6 @@ const Search = () => {
         },
       });
       setresult(donnees.data.query.search);
-      console.log(results);
     };
 
     if (term && !results.length) {

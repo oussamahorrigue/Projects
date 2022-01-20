@@ -20,21 +20,22 @@
     "**/*.ts",
     "**/*.tsx",
     "components/VideoBrowser/App.js",
-    "components/VideoBrowser/SearchBar.js",
+    "components/VideoBrowser/SearchBar.tsx",
     "components/NavBar/Component.style.js",
-    "components/NavBar/WikiLayout.js",
+    "components/NavBar/WikiLayout.tsx",
     "components/wikipedia/Styles.wikipedia.tsx",
-    "components/VideoBrowser/VideoItems.js",
-    "components/wikipedia/Search.js",
+    "components/VideoBrowser/VideoItems.tsx",
+    "components/wikipedia/Search.tsx",
     "styles/style-wikipedia.js",
     "pages/index.tsx",
     "components/spacex/App.tsx",
-    "components/NavBar/SpacexLayout.js",
+    "components/NavBar/SpacexLayout.ts",
     "components/Search-Images/ImageCard.js",
     "components/Search-Images/SearchBar.js",
     "components/Search-Images/ImageList.js",
     "components/pokemon/App.js",
-    "pages/pokemon.js"
+    "pages/pokemon.tsx",
+    "components/VideoBrowser/VideoList.js"
   ],
   "exclude": ["node_modules"]
 }
