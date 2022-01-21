@@ -4,6 +4,7 @@ import {
   Pokemon__name,
   Pokemon__image,
   Pokemon_types,
+  Span,
 } from "./Style-pokemon";
 
 export function Pokemons({ pokemons, PokemonSearched }) {
@@ -20,7 +21,9 @@ export function Pokemons({ pokemons, PokemonSearched }) {
         </Pokemon__name>
         <Pokemon_types>
           {pokemo.types.map((type: string[], index: number) => (
-            <span key={index}>{type}</span>
+            <Span bg={type} key={index}>
+              {type}
+            </Span>
           ))}
         </Pokemon_types>
         <Pokemon__image>

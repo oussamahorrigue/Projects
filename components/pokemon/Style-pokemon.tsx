@@ -58,26 +58,44 @@ export const Pokemon_types = styled.div`
   padding-right: 0px;
   justify-content: space-between;
   margin: 15px;
-  span {
-    width: 100%;
-    margin: 2px;
-    background-color: #f16820;
-    border-radius: 3px;
-    padding: 7px;
-    font-weight: 700;
-    color: #fff;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 12px;
-    margin-bottom: 10px;
-    word-wrap: break-word;
-    text-align: center;
-    line-height: 15px;
-    @media (max-width: 800px) {
-      width: 100%;
-    }
-  }
+
   @media (max-width: 800px) {
     flex-wrap: wrap;
+  }
+`;
+export const Span = styled.span`
+  width: 100%;
+  margin: 2px;
+  background-color: ${(props) => {
+    if (props.bg === "Grass") return "green";
+    if (props.bg === "Poison") return "#181A47";
+    if (props.bg === "Water") return "blue";
+    if (props.bg === "Fire") return "red";
+    if (props.bg === "Flying") return "yellow";
+    if (props.bg === "Bug") return "#777";
+    if (props.bg === "Normal") return "#40A497";
+    if (props.bg === "Electric") return "#A47140";
+    if (props.bg === "Ground") return "#294A13";
+    if (props.bg === "Fairy") return "#745688";
+    if (props.bg === "Fighting") return "#02AEF6";
+    if (props.bg === "Psychic") return "#71F00E";
+    if (props.bg === "Rock") return "#8D8D70";
+    if (props.bg === "Steel") return "#010BFE";
+    if (props.bg === "Ice") return "#B0B1D8";
+    else return "black";
+  }};
+  border-radius: 3px;
+  padding: 7px;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 15px;
+  @media (max-width: 800px) {
+    width: 100%;
   }
 `;
