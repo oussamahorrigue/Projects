@@ -56,7 +56,7 @@ export const Pokemon_types = styled.div`
   display: flex;
   padding-left: 10px;
   padding-right: 0px;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 15px;
 
   @media (max-width: 800px) {
@@ -64,7 +64,7 @@ export const Pokemon_types = styled.div`
   }
 `;
 export const Span = styled.span`
-  width: 100%;
+  min-width: 50%;
   margin: 2px;
   background-color: ${(props) => {
     if (props.bg === "Grass") return "green";
