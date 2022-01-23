@@ -107,7 +107,7 @@ export async function getStaticProps() {
   const { data } = await client.query({
     query: gql`
       query GetLaunches {
-        launchesPast(limit: 50) {
+        launchesPast(limit: 150) {
           id
           mission_name
           launch_date_local
