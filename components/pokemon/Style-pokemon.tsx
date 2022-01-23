@@ -14,7 +14,7 @@ export const Container = styled.div`
 `;
 export const Pokemon = styled.div`
   display: inline-block;
-  width: 15%;
+  width: 19%;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
