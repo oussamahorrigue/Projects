@@ -28,10 +28,9 @@ export const Pokemon = styled.div`
 `;
 
 export const Pokemon__name = styled.div`
-  background-color: #ecd018;
   text-align: center;
   padding: 10px;
-
+  background: linear-gradient(#f0dee9, #5e5058);
   p {
     text-transform: uppercase;
     font-weight: bold;
