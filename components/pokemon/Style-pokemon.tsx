@@ -22,7 +22,7 @@ export const Pokemon = styled.div`
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   overflow: hidden;
   margin-bottom: 20px;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     width: 100%;
   }
 `;
