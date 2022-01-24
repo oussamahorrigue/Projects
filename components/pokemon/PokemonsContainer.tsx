@@ -4,9 +4,9 @@ import { Container } from "./Style-pokemon";
 
 const PokemonsContainer = ({ pokemons, PokemonSearched }) => {
   return (
-    <div>
+    <Container>
       <Pokemons pokemons={pokemons} PokemonSearched={PokemonSearched} />
-    </div>
+    </Container>
   );
 };
 export default PokemonsContainer;
