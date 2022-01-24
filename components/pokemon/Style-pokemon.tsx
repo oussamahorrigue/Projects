@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  max-width: 550px;
+  width: 1100px;
   margin: auto;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -41,15 +41,11 @@ export const Pokemon__name = styled.div`
 `;
 
 export const Pokemon__image = styled.div`
-  padding: 20px;
-  height: 320px;
+  padding: 2px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  img {
-    max-width: 100%;
-    height: 100%;
-  }
 `;
 export const Pokemon_types = styled.div`
   display: flex;
@@ -97,4 +93,9 @@ export const Span = styled.span`
   @media (max-width: 800px) {
     width: 100%;
   }
+`;
+export const Image = styled.img`
+  object-fit: cover;
+  object-position: center center;
+  height: 140px;
 `;

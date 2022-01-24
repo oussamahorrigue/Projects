@@ -4,7 +4,7 @@ import { Container } from "./Style-pokemon";
 
 const PokemonsContainer = ({ pokemons, PokemonSearched }) => {
   return (
-    <div className="container-fluid">
+    <div>
       <Pokemons pokemons={pokemons} PokemonSearched={PokemonSearched} />
     </div>
   );

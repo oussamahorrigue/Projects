@@ -5,6 +5,7 @@ import {
   Pokemon__image,
   Pokemon_types,
   Span,
+  Image,
 } from "./Style-pokemon";
 
 export function Pokemons({ pokemons, PokemonSearched }) {
@@ -27,7 +28,7 @@ export function Pokemons({ pokemons, PokemonSearched }) {
           ))}
         </Pokemon_types>
         <Pokemon__image>
-          <img src={pokemo.image} alt={pokemo.name} />
+          <Image src={pokemo.image} alt={pokemo.name} />
         </Pokemon__image>
       </Pokemon>
     ));
