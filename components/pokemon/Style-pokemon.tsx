@@ -22,6 +22,7 @@ export const Pokemon = styled.div`
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   overflow: hidden;
   margin-bottom: 20px;
+  height: 260px;
   @media (max-width: 900px) {
     width: 100%;
   }
@@ -97,5 +98,5 @@ export const Span = styled.span`
 export const Image = styled.img`
   object-fit: cover;
   object-position: center center;
-  height: 140px;
+  height: 116px;
 `;
