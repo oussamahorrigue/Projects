@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   @media (max-width: 800px) {
-    width: 100%;
+    width: 90%;
     flex-wrap: wrap;
   }
 `;
@@ -25,6 +25,7 @@ export const Pokemon = styled.div`
   height: 240px;
   @media (max-width: 900px) {
     width: 100%;
+    height: 280px;
   }
 `;
 
@@ -43,7 +44,7 @@ export const Pokemon__name = styled.div`
 
 export const Pokemon__image = styled.div`
   padding: 2px;
-  height: 60px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,5 +99,6 @@ export const Span = styled.span`
 export const Image = styled.img`
   object-fit: cover;
   object-position: center center;
-  height: 80px;
+  height: 100px;
+  margin-top: 40px;
 `;
